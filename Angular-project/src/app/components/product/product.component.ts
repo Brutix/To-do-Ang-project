@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IProduct} from "../../interfaces/product";
 
 @Component({
   selector: 'app-product',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  title = 'Angular-project';
+  @Input() product: IProduct
 }

@@ -1,12 +1,13 @@
 export interface IProduct{
   readonly id: number
+  title : string
   prodclass: string
   prodYear: number
   cost: number
 
 }
 
-interface IUser{
+ export interface IUser{
   readonly id: number
   login: string
   password: any
@@ -14,13 +15,13 @@ interface IUser{
 
 }
 
-interface IDesktop extends IProduct{
+export interface IDesktop extends IProduct{
   platform: any
   chipset: any
   memory: number
 
 }
-interface ILaptop extends IProduct{
+export interface ILaptop extends IProduct{
   platform: any
   chipset: any
   memory: number
