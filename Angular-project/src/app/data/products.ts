@@ -5,7 +5,8 @@ import {ILaptop} from "../interfaces/product";
 export const products: IProduct[] =[
   {
     id: 1,
-  prodclass: computers,
+    title: 'Intel',
+  prodclass: 'computers',
   prodYear: 2017,
   cost: 7000
     // platform: "AMD",

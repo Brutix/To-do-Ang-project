@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {ProductComponent} from "./components/product/product.component";
-import {Product} from "./models/product"
+
 
 
 
