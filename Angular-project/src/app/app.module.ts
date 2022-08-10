@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {ProductComponent} from "./components/product/product.component";
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 
@@ -12,9 +14,11 @@ import {ProductComponent} from "./components/product/product.component";
     AppComponent,
     ProductComponent,
 
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
