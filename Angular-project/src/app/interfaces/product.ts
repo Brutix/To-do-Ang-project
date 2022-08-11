@@ -10,20 +10,20 @@ export interface IProduct{
  export interface IUser{
   readonly id: number
   login: string
-  password: any
-  mail?: any
+  password: string | number
+  mail?: string
 
 }
 
 export interface IDesktop extends IProduct{
-  platform: any
-  chipset: any
+  platform: string
+  chipset: string
   memory: number
 
 }
 export interface ILaptop extends IProduct{
-  platform: any
-  chipset: any
+  platform: string
+  chipset: string
   memory: number
   buttery: number
 
