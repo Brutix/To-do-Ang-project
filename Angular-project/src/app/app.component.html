@@ -8,18 +8,28 @@
   <title>{{title}}</title>
 </head>
 <body>
-<div>
-
-  <app-product
-    [product]="products[0]"
-  ></app-product>
-  <app-product
-    [product]="products[1]"
-  ></app-product>
-</div>
-
-
-
+<header>
+<h1>{{ title }}</h1>
+  <nav>
+    <ol>
+      <li>
+        <a routerLink="/home">Homepage</a>
+    </li>
+      <li>
+        <a routerLink="/laptop">Laptop</a>
+      </li>
+      <li>
+        <a routerLink="/desktop">Desktop</a>
+      </li>
+      <li>
+        <a routerLink="/product">Product</a>
+      </li>
+    </ol>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
 
 
 </body>

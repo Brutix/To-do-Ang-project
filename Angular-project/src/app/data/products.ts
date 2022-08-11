@@ -1,6 +1,6 @@
-import {IProduct} from "../interfaces/product"
-import {IDesktop} from "../interfaces/product";
-import {ILaptop} from "../interfaces/product";
+import {IProduct} from '../interfaces/product'
+import {IDesktop} from '../interfaces/product';
+import {ILaptop} from '../interfaces/product';
 
 export const products: IProduct[] =[
   {
