@@ -1,30 +1,11 @@
 export interface IProduct{
   readonly id: number
-  title : string
-  prodclass: string
-  prodYear: number
-  cost: number
+  title: string
+  itemsInBox: number
+  weight: number
+  price: number
+  imgSrc: string
 
 }
 
- export interface IUser{
-  readonly id: number
-  login: string
-  password: string | number
-  mail?: string
 
-}
-
-export interface IDesktop extends IProduct{
-  platform: string
-  chipset: string
-  memory: number
-
-}
-export interface ILaptop extends IProduct{
-  platform: string
-  chipset: string
-  memory: number
-  buttery: number
-
-}

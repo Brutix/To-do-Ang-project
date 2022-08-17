@@ -8,6 +8,7 @@ import { DesctopComponent } from './components/desctop/desctop.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import {ProductGuard} from './product.guard';
+import { BusketComponent } from './components/busket/busket.component';
 
 
 
@@ -18,7 +19,8 @@ import {ProductGuard} from './product.guard';
     ProductComponent,
     LaptopComponent,
     DesctopComponent,
-    HomepageComponent
+    HomepageComponent,
+    BusketComponent
   ],
     imports: [
         BrowserModule,
