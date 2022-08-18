@@ -1,27 +1,34 @@
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-
-import {ProductComponent} from './components/product/product.component';
-import {HomepageComponent} from './components/homepage/homepage.component';
-import {ProductGuard} from './product.guard';
-import {BusketComponent} from "./components/busket/busket.component";
+import { CommonModule, } from '@angular/common';
+import { BrowserModule  } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
+import { AdminLayoutComponent} from "./components/admin-layout/admin-layout.component";
 
 
-const routes: Routes = [
-
-  { path: 'product', component: ProductComponent },
-  { path: 'home', component: HomepageComponent },
-  { path: 'busket', component: BusketComponent, canActivate: [ProductGuard] },
-  { path: '', redirectTo: '/product', pathMatch: 'full' }
+const routes: Routes =[
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  }, {
+    path: '',
+    component: AdminLayoutComponent,
+    children: [{
+      path: '',
+      loadChildren: () => import('./components/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
+    }]
+  }
 ];
 
 @NgModule({
-  declarations: [],
   imports: [
-    RouterModule.forRoot(routes)
+    CommonModule,
+    BrowserModule,
+    RouterModule.forRoot(routes,{
+      useHash: true
+    })
   ],
   exports: [
-    RouterModule
-  ]
+  ],
 })
 export class AppRoutingModule { }
