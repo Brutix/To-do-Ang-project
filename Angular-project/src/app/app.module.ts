@@ -1,32 +1,43 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import {ProductComponent} from "./components/product/product.component";
-import {RouterModule} from "@angular/router";
-import { LaptopComponent } from './components/laptop/laptop.component';
-import { DesctopComponent } from './components/desctop/desctop.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { HomepageComponent } from './components/homepage/homepage.component';
-import {ProductGuard} from './product.guard';
-
-
+import { ComponentsModule } from './components/components.module';
+import { AppComponent } from './app.component';
+import { TestDashboardComponent } from './components/test-dashboard/test-dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
+  imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+
+  ],
   declarations: [
     AppComponent,
-    ProductComponent,
-    LaptopComponent,
-    DesctopComponent,
-    HomepageComponent
+    TestDashboardComponent,
+
   ],
-    imports: [
-        BrowserModule,
-        RouterModule,
-        AppRoutingModule
-    ],
-  providers: [ProductGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
-
-export class AppModule {}
+export class AppModule { }

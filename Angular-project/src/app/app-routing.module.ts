@@ -1,27 +1,25 @@
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {LaptopComponent} from './components/laptop/laptop.component';
-import {DesctopComponent} from './components/desctop/desctop.component';
-import {ProductComponent} from './components/product/product.component';
-import {HomepageComponent} from './components/homepage/homepage.component';
-import {ProductGuard} from './product.guard';
+import { CommonModule, } from '@angular/common';
+import { BrowserModule  } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [
-  { path: 'laptop', component: LaptopComponent },
-  { path: 'desktop', component: DesctopComponent },
-  { path: 'product', component: ProductComponent, canActivate: [ProductGuard] },
-  { path: 'home', component: HomepageComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
-];
 
+const appRoutes: Routes =[
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
+]
 @NgModule({
-  declarations: [],
   imports: [
-    RouterModule.forRoot(routes)
+    CommonModule,
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [
-    RouterModule
-  ]
+  ],
 })
+
 export class AppRoutingModule { }
