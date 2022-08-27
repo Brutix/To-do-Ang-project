@@ -29,6 +29,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     exports: [
         FooterComponent,
 
+
     ]
 })
 export class ComponentsModule { }

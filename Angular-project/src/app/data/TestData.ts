@@ -6,7 +6,8 @@ import {ITask} from "../interfaces/Task";
 export class TestData {
 
   static categories: ICategory[] = [
-    {id: 1, title: 'Робота'},
+    { id: 1,
+      title: 'Робота'},
     {id: 2, title: 'Родина'},
     {id: 3, title: 'Навчання'},
     {id: 4, title: 'Відпочинок'},

@@ -13,6 +13,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import {MapsComponent} from './components/maps/maps.component';
+import {TableListComponent} from './components/table-list/table-list.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { LayoutModule } from '@angular/cdk/layout';
   declarations: [
     AppComponent,
     TestDashboardComponent,
+    MapsComponent,
+    TableListComponent
 
   ],
   providers: [],
