@@ -13,6 +13,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import {TableListComponent} from "./components/table-list/table-list.component";
+import {LoginPageComponent} from "./components/login-page/login-page.component";
+
 
 
 @NgModule({
@@ -31,10 +34,16 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatButtonModule,
     LayoutModule,
 
+
   ],
   declarations: [
     AppComponent,
     TestDashboardComponent,
+    TableListComponent,
+    LoginPageComponent,
+
+
+
 
   ],
   providers: [],
