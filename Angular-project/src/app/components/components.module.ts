@@ -3,36 +3,23 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './footer/footer.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LayoutModule } from '@angular/cdk/layout';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    LayoutModule,
-    FormsModule,
-    ReactiveFormsModule
   ],
   declarations: [
     FooterComponent,
-
-
-
+    NavbarComponent,
+    SidebarComponent
   ],
-    exports: [
-        FooterComponent,
-
-    ]
+  exports: [
+    FooterComponent,
+    NavbarComponent,
+    SidebarComponent
+  ]
 })
 export class ComponentsModule { }
