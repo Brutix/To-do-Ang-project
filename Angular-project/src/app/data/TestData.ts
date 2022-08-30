@@ -71,7 +71,7 @@ export class TestData {
       priority: TestData.priorities[1],
       completed: false,
       category: TestData.categories[6],
-      date: new Date('2022-09-10')
+
     },
     {
       id: 7,
@@ -95,7 +95,7 @@ export class TestData {
       priority: TestData.priorities[2],
       completed: false,
       category: TestData.categories[2],
-      date: new Date('2022-09-10')
+
     },
     {
       id: 10,
@@ -103,7 +103,7 @@ export class TestData {
       priority: TestData.priorities[1],
       completed: false,
       category: TestData.categories[7],
-      date: new Date('2022-09-10')
+
     },
     {
       id: 11,
@@ -119,7 +119,7 @@ export class TestData {
       priority: TestData.priorities[1],
       completed: false,
       category: TestData.categories[4],
-      date: new Date('2022-09-10')
+
     }
   ]
 

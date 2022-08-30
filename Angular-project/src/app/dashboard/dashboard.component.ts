@@ -12,6 +12,7 @@ import {ICategory} from "../interfaces/Category";
 export class DashboardComponent implements OnInit {
   tasks: ITask[];
   categories: ICategory[];
+  selectedCategory: ICategory;
 
   constructor(private dataHandler: DataHandlerService) { }
 
@@ -23,6 +24,11 @@ export class DashboardComponent implements OnInit {
   }
 
   showTaskByCategory(category: ICategory) {
+    this.selectedCategory = category;
     this.dataHandler.fillTasksByCategory(category);
+  }
+
+  toggleTaskComplited(task: ITask){
+    task.completed = !task.completed;
   }
 }

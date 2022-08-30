@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {LoginPageComponent} from "./login-page/login-page.component";
 
-import { CategoriesComponent } from './categories/categories.component';
 
 
 
@@ -28,7 +27,7 @@ import { CategoriesComponent } from './categories/categories.component';
     AdminLayoutComponent,
     LoginPageComponent,
 
-    CategoriesComponent
+
 
   ],
   providers: [],
