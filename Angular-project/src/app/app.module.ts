@@ -8,6 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {LoginPageComponent} from "./login-page/login-page.component";
+import {CategoriesComponent} from './view/categories.component'
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import {LoginPageComponent} from "./login-page/login-page.component";
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    CategoriesComponent
 
   ],
   providers: [],

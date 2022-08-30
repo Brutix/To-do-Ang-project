@@ -6,7 +6,7 @@ export interface ITask {
   readonly id: number
   title: string
   completed: boolean
-  priority: IPriority
-  category: ICategory
-  date: Date
+  priority?: IPriority
+  category?: ICategory
+  date?: Date
 }

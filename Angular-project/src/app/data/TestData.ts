@@ -30,7 +30,7 @@ export class TestData {
       title: 'виконати вправу',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[5],
+      category: TestData.categories[9],
       date: new Date('2022-09-10')
     },
     {
@@ -39,6 +39,86 @@ export class TestData {
       priority: TestData.priorities[3],
       completed: false,
       category: TestData.categories[4],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 3,
+      title: 'щось інше',
+      priority: TestData.priorities[2],
+      completed: false,
+      category: TestData.categories[1],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 4,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[1],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 5,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[2],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 6,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[2],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 7,
+      title: 'виконати вправу',
+      priority: TestData.priorities[2],
+      completed: false,
+      category: TestData.categories[9],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 8,
+      title: 'відпочити',
+      priority: TestData.priorities[3],
+      completed: false,
+      category: TestData.categories[4],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 9,
+      title: 'щось інше',
+      priority: TestData.priorities[2],
+      completed: false,
+      category: TestData.categories[1],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 10,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[1],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 11,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[2],
+      date: new Date('2022-09-10')
+    },
+    {
+      id: 12,
+      title: 'щось інше',
+      priority: TestData.priorities[1],
+      completed: false,
+      category: TestData.categories[2],
       date: new Date('2022-09-10')
     }
   ]
