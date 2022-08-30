@@ -30,7 +30,7 @@ export class TestData {
       title: 'виконати вправу',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[9],
+      category: TestData.categories[7],
       date: new Date('2022-09-10')
     },
     {

@@ -15,5 +15,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.tasks = this.dataHandler.getTasks()
+
   }
 }

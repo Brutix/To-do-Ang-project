@@ -15,6 +15,6 @@ export class DataHandlerService {
   }
 
   getTasks(): ITask[] {
-    return
+    return TestData.tasks;
   }
 }

@@ -10,7 +10,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import {LoginPageComponent} from "./login-page/login-page.component";
 
 import { CategoriesComponent } from './categories/categories.component';
-import {DataHandlerService} from './service/data-handler.service';
+
+
 
 @NgModule({
   imports: [
@@ -30,7 +31,7 @@ import {DataHandlerService} from './service/data-handler.service';
     CategoriesComponent
 
   ],
-  providers: [DataHandlerService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
