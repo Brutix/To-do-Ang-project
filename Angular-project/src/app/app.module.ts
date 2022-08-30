@@ -8,8 +8,9 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {LoginPageComponent} from "./login-page/login-page.component";
-import { NewComponent } from './new/new.component';
+
 import { CategoriesComponent } from './categories/categories.component';
+import {DataHandlerService} from './service/data-handler.service';
 
 @NgModule({
   imports: [
@@ -25,11 +26,11 @@ import { CategoriesComponent } from './categories/categories.component';
     AppComponent,
     AdminLayoutComponent,
     LoginPageComponent,
-    NewComponent,
+
     CategoriesComponent
 
   ],
-  providers: [],
+  providers: [DataHandlerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
