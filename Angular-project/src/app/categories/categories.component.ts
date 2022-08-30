@@ -8,14 +8,14 @@ import {ICategory} from '../interfaces/Category';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-  categories: ICategory[];
 
-  constructor(private dataHandler: DataHandlerService) {
+
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.categories = this.dataHandler.getCategories()
-    console.log(this.categories)
+
+
   }
 
 }

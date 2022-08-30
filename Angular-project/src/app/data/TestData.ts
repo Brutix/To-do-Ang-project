@@ -46,7 +46,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[1],
+      category: TestData.categories[2],
       date: new Date('2022-09-10')
     },
     {
@@ -54,7 +54,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[1],
       completed: false,
-      category: TestData.categories[1],
+      category: TestData.categories[3],
       date: new Date('2022-09-10')
     },
     {
@@ -70,7 +70,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[1],
       completed: false,
-      category: TestData.categories[2],
+      category: TestData.categories[6],
       date: new Date('2022-09-10')
     },
     {
@@ -78,7 +78,7 @@ export class TestData {
       title: 'виконати вправу',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[9],
+      category: TestData.categories[5],
       date: new Date('2022-09-10')
     },
     {
@@ -94,7 +94,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[1],
+      category: TestData.categories[2],
       date: new Date('2022-09-10')
     },
     {
@@ -102,7 +102,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[1],
       completed: false,
-      category: TestData.categories[1],
+      category: TestData.categories[7],
       date: new Date('2022-09-10')
     },
     {
@@ -118,7 +118,7 @@ export class TestData {
       title: 'щось інше',
       priority: TestData.priorities[1],
       completed: false,
-      category: TestData.categories[2],
+      category: TestData.categories[4],
       date: new Date('2022-09-10')
     }
   ]
