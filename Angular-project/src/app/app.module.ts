@@ -8,7 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {LoginPageComponent} from "./login-page/login-page.component";
-import { NewComponent } from './new/new.component';
+
 import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { CategoriesComponent } from './categories/categories.component';
     AppComponent,
     AdminLayoutComponent,
     LoginPageComponent,
-    NewComponent,
+
     CategoriesComponent
 
   ],
