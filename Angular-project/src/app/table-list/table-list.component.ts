@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {TestData} from '../../data/TestData';
+import {TestData} from '../data/TestData';
 
 
 @Component({
