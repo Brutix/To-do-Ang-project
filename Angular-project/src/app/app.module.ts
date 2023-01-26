@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {LoginPageComponent} from "./login-page/login-page.component";
 
+
+
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -22,7 +25,9 @@ import {LoginPageComponent} from "./login-page/login-page.component";
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginPageComponent
+    LoginPageComponent,
+
+
 
   ],
   providers: [],
